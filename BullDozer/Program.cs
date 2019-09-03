@@ -26,15 +26,31 @@ namespace BullDozer
         public string color { get; set; }
     }
 
-    public class Man : GeneralObject
-    {
-        public Man ()
+        public class Human : GeneralObject
         {
-            
+            public Human()
+            {
+
+            }
+
+            public string name { get; set; }
         }
 
-        public string name { get; set; }
-    }
+            public class Man : Human
+            {
+                public Man ()
+                {
+            
+                }
+            }
+
+            public class Woman : Human
+            {
+                public Woman()
+                {
+
+                }
+            }
 
     public class Kart : GeneralObject
     {
